@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">SampleKotlin</string>
+    <string name="title_activity_home" tools:keep="@string/title_activity_home">HomeActivity</string>
+    <string name="splash_title">HELLO</string>
+    <string name="home_title">home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
