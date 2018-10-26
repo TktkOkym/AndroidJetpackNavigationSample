@@ -35,10 +35,10 @@ class RecyclerViewFragment : Fragment() {
     private fun subscribeUi(adapter: MyListAdapter) {
         val itemList : MutableList<Item> = ArrayList()
 
-        itemList.add(Item("hello", "description", "https://trvimg.r10s.jp/share/image_up/129475/LARGE/47cd1cea9badee3f6615dade3b9ba96389ee10e0.47.1.26.2.jpg"))
+        itemList.add(Item("hello", "description", ""))
         itemList.add(Item("aa","aaaa",""))
         itemList.add(Item("bb","aaaa",""))
-        itemList.add(Item("hello", "description", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgUAVdBtShY9RVujtGrb3EASXs3GXTxH6PyvT9otFOADHLv87M"))
+        itemList.add(Item("hello", "description", ""))
         itemList.add(Item("aa","aaaa",""))
         itemList.add(Item("bb","aaaa",""))
         adapter.submitList(itemList)
