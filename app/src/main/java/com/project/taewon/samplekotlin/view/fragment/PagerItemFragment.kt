@@ -20,8 +20,6 @@ class PagerItemFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-
         val binding = FragmentPagerItemBinding.inflate(inflater, container, false)
 
         binding.tapText.setOnClickListener { view ->

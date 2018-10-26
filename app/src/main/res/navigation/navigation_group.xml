@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/fragment_home"
         android:name="com.project.taewon.samplekotlin.view.fragment.HomeFragment"
-        android:label="@string/home_title"
+        android:label="@string/title_home_fragment"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_fragment_home_to_fragment_detail"
@@ -36,19 +36,19 @@
     <fragment
         android:id="@+id/fragment_detail"
         android:name="com.project.taewon.samplekotlin.view.fragment.DetailFragment"
-        android:label="detail"
+        android:label="@string/title_detail_fragment"
         tools:layout="@layout/fragment_detail" />
 
     <fragment
         android:id="@+id/fragment_recycler_view"
         android:name="com.project.taewon.samplekotlin.view.fragment.RecyclerViewFragment"
-        android:label="recycler view"
+        android:label="@string/title_recycler_view"
         tools:layout="@layout/fragment_recycler_view" />
 
     <fragment
         android:id="@+id/fragment_list_detail"
         android:name="com.project.taewon.samplekotlin.view.fragment.ListDetailFragment"
-        android:label="list detail"
+        android:label="@string/title_list_detail"
         tools:layout="@layout/fragment_list_detail" />
 
 
