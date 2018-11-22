@@ -14,7 +14,7 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="@dimen/item_column_width"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="@{clickListener}" >
 
@@ -22,7 +22,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardUseCompatPadding="true"
-            android:padding="@dimen/cardview_padding"
             app:cardElevation="@dimen/cardview_elevation"
             app:cardCornerRadius="@dimen/cardview_corner_radius"
             tools:ignore="MissingConstraints">
@@ -37,15 +36,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/item_image_height"
                     android:scaleType="centerCrop"
-                    app:imageFromUrl="@{data.imageUrl}"
-                    android:contentDescription="CardView Item Image" />
+                    app:imageFromUrl="@{data.imageUrl}" />
 
                 <TextView
                     android:id="@+id/some_item_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
                     android:textAlignment="center"
                     android:textStyle="bold"
+                    android:textSize="@dimen/list_item_title_text"
                     android:text="@{data.name}" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>

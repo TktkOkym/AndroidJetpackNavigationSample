@@ -15,7 +15,7 @@ android {
         targetSdkVersion rootProject.targetSdkVersion
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         versionCode 1
-        versionName "0.1.5"
+        versionName "0.0.1"
         vectorDrawables.useSupportLibrary true
     }
     buildTypes {
@@ -34,6 +34,7 @@ dependencies {
     kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
     implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycleVersion"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
+    implementation "android.arch.navigation:navigation-fragment:$rootProject.navigationVersion"
     implementation "android.arch.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"
     implementation "android.arch.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
     implementation "androidx.core:core-ktx:$rootProject.ktxVersion"
@@ -51,8 +52,4 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
     androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.2.0'
     testImplementation "junit:junit:$rootProject.junitVersion"
-
-    //3rd party library
-    implementation 'com.github.kittinunf.statik:statik:0.11.0'
-    implementation 'android.arch.navigation:navigation-fragment:1.0.0-alpha06'
 }

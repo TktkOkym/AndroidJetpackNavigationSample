@@ -5,5 +5,5 @@
     <string name="title_home_fragment">home</string>
     <string name="title_detail_fragment">detail</string>
     <string name="title_recycler_view">recycler view</string>
-    <string name="title_list_detail">list detail</string>
+    <string name="title_list_detail">Artist Detail</string>
 </resources>

@@ -23,9 +23,9 @@ class ListDetailFragment : Fragment() {
     ): View? {
         val binding = FragmentListDetailBinding.inflate(inflater, container, false)
 
+        //TODO: make proper detail page with an image and description
         arguments?.let {
-            val string: String = arguments!!.getString(Constants.BUNDLE_NAME) ?: ""
-            binding.root.list_detail_text.text = "$string LIST DETAIL"
+            binding.root.list_detail_text.text = it.getString(Constants.BUNDLE_NAME) ?: ""
         }
         return binding.root
     }

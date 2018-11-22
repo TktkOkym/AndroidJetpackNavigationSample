@@ -6,18 +6,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.navigation.findNavController
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.project.taewon.samplekotlin.R
 import com.project.taewon.samplekotlin.constant.Constants
 import com.project.taewon.samplekotlin.data.Item
-import com.project.taewon.samplekotlin.databinding.ListItemMyBinding
+import com.project.taewon.samplekotlin.databinding.ListItemBinding
 
 class MyListAdapter : ListAdapter<Item, MyListAdapter.ViewHolder>(MyListDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(ListItemMyBinding.inflate(
+        return ViewHolder(ListItemBinding.inflate(
                 LayoutInflater.from(parent.context), parent, false))
     }
 
@@ -40,7 +39,7 @@ class MyListAdapter : ListAdapter<Item, MyListAdapter.ViewHolder>(MyListDiffCall
     }
 
     class ViewHolder(
-        private val binding: ListItemMyBinding
+        private val binding: ListItemBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(listener: View.OnClickListener, item: Item) {
@@ -49,23 +48,6 @@ class MyListAdapter : ListAdapter<Item, MyListAdapter.ViewHolder>(MyListDiffCall
                 data = item
                 executePendingBindings()
             }
-        }
-    }
-
-    class MyListDiffCallback : DiffUtil.ItemCallback<Item>() {
-
-        override fun areItemsTheSame(
-            oldItem: Item,
-            newItem: Item
-        ): Boolean {
-            return oldItem.name == newItem.name // check uniqueness
-        }
-
-        override fun areContentsTheSame(
-            oldItem: Item,
-            newItem: Item
-        ): Boolean {
-            return oldItem == newItem // check contents
         }
     }
 }

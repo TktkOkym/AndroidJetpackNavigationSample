@@ -10,9 +10,11 @@
         android:background="@color/white">
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/my_list"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:listitem="@layout/list_item_my" />
+            tools:listitem="@layout/list_item"
+            android:paddingBottom="@dimen/cardview_padding"
+            android:clipToPadding="false"/>
     </LinearLayout>
 
 </layout>
