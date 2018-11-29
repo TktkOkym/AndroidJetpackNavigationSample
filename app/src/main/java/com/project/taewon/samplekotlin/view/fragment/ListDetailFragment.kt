@@ -23,7 +23,7 @@ class ListDetailFragment : Fragment() {
     ): View? {
         val binding = FragmentListDetailBinding.inflate(inflater, container, false)
 
-        //TODO: make proper detail page with an image and description
+        // TODO: make proper detail page with an image and description
         arguments?.let {
             binding.root.list_detail_text.text = it.getString(Constants.BUNDLE_NAME) ?: ""
         }

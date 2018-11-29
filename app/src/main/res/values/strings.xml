@@ -6,4 +6,6 @@
     <string name="title_detail_fragment">detail</string>
     <string name="title_recycler_view">recycler view</string>
     <string name="title_list_detail">Artist Detail</string>
+    <string name="detail_main">DETAIL</string>
+    <string name="tap">TAP</string>
 </resources>

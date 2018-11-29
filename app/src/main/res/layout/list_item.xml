@@ -36,7 +36,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/item_image_height"
                     android:scaleType="centerCrop"
-                    app:imageFromUrl="@{data.imageUrl}" />
+                    app:imageFromUrl="@{data.imageUrl}"
+                    android:contentDescription="Artist Image"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/some_item_text"
